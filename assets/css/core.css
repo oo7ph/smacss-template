@@ -178,19 +178,19 @@ small{
 
 /* utility classes */
 
-.u-append-bottom{
+.utility-append-bottom{
     margin-bottom:20px;
 }
 
-.u-no-margin{
+.utility-no-margin{
     margin:0;
 }
 
-.u-prepend-top{
+.utility-prepend-top{
     margin-top:20px;
 }
 
-.u-seo-friendly-hide{
+.utility-seo-friendly-hide{
     height:1px;
     margin:0;
     overflow:hidden;
@@ -198,14 +198,14 @@ small{
 }
 
 @media print{
-	.u-seo-friendly-hide{
+	.utility-seo-friendly-hide{
 	    height:auto;
 		margin-bottom:20px;
 	    width:auto;
 	}
 }
 
-.u-shadow{
+.utility-shadow{
     box-shadow:0 0 5px 0 #000;
 }
 
