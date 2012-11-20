@@ -335,7 +335,7 @@ small{
 	}
 }
 
-.l-breadcrumb li{
+.layout-breadcrumb li{
 	display:inline;
 }
 
@@ -384,7 +384,7 @@ small{
 /* buttons */
 
 .btn{
-    background:#973C22;
+    background:#ccc;
 	border:none;
     border-radius:5px;
     color:#fff !important;
@@ -392,24 +392,8 @@ small{
 }
 
 .btn:hover, .btn:active{
-    background:#6C2B19;
+    background:#bbb;
     text-decoration:none;
-}
-
-.btn.btn-outlet{
-    background:#094A37;
-}
-
-.btn.btn-outlet:hover, .btn.btn-outlet:active{
-    background:#031B14;
-}
-
-.btn.btn-about{
-    background:#4A1202;
-}
-
-.btn.btn-about:hover, .btn.btn-about:active{
-    background:#190601;
 }
 
 /* alert boxes */
