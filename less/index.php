@@ -1,4 +1,5 @@
 <?php
+	// http://leafo.net/lessphp/docs/
 	require "inc/lessc.inc.php";
 	$less = new lessc;
 	$less->compileFile("assets/css/core.less", "assets/css/core.css");		
