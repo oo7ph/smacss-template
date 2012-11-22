@@ -1,130 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.clearfix {
-  display: inline-block;
-}
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-html[xmlns] .clearfix {
-  display: block;
-}
-* html .clearfix {
-  height: 1%;
-}
+@import url("//normalize-css.googlecode.com/svn/trunk/normalize.css");
 body {
   background-color: #ccc;
   color: #000;
@@ -218,6 +92,23 @@ th {
 small {
   font-size: 0.75em;
 }
+.utility-clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.utility-clearfix {
+  display: inline-block;
+}
+html[xmlns] .utility-clearfix {
+  display: block;
+}
+* html .utility-clearfix {
+  height: 1%;
+}
 .utility-append-bottom {
   margin-bottom: 20px;
 }
@@ -278,6 +169,7 @@ small {
 .layout-navigation {
   bottom: 0;
   margin: 0;
+  padding: 0;
   position: absolute;
 }
 .layout-navigation li {
