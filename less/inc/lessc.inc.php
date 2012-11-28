@@ -2424,6 +2424,7 @@ class lessc_parser {
 		if ($keyName !== null) unset($this->env->currentProperty);
 
 
+
 		if (count($values) == 0) return false;
 
 		$value = lessc::compressList($values, ', ');
@@ -3129,6 +3130,7 @@ class lessc_parser {
 			$validChars = $allowNewline ? "." : "[^\n]";
 		}
 		if (!$this->match('('.$validChars.'*?)'.lessc::preg_quote($what), $m, !$until)) return false;
+
 		if ($until) $this->count -= strlen($what); // give back $what
 		$out = $m[1];
 		return true;
@@ -3412,4 +3414,3 @@ class lessc_formatter_lessjs extends lessc_formatter_classic {
 	public $assignSeparator = ": ";
 	public $selectorSeparator = ",";
 }
-

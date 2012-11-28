@@ -28,31 +28,31 @@
 	
 	<body>
 		<!-- container -->
-		<div class="layout-container">
+		<div id="container">
 			<!-- print header -->
-			<div class="layout-printheader utility-clearfix"><img src="assets/img/global/logo.gif" alt="XXXX logo"></div>
+			<div id="printheader" class="utility-clearfix"><img src="assets/img/global/logo.gif" alt="XXXX logo"></div>
 			
 			<!-- header -->
-			<div class="layout-header">
+			<div id="header">
 				<!-- logo -->
-				<a href="" class="layout-logo" title="Return to home page"><img src="assets/img/global/logo.gif" alt="XXXX logo"></a>
+				<a href="" id="logo" title="Return to home page"><img src="assets/img/global/logo.gif" alt="XXXX logo"></a>
 				
 				<!-- navigation -->
-				<ul class="layout-navigation">
+				<ul id="navigation">
 					<li><a href="">Home</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>
 				
 				<!-- search form -->
-				<form action="" method="post" class="layout-search-form">
+				<form action="" method="post" id="search-form">
 					<input type="text" name="searchterm" placeholder="Search the site">
 					<input type="submit" name="submit" value="Go">
 				</form>
 			</div>
 			
 			<!-- article -->
-			<div class="layout-article">
+			<div id="article">
 				<h1>Welcome to XXXX</h1>
 				
 				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -73,7 +73,7 @@
 			</div>
 			
 			<!-- footer -->
-			<div class="layout-footer">
+			<div id="footer">
 				<ul>
 					<li class="first-child"><a href="">Privacy Privacy</a></li>
 					<li><a href="">Site Map</a></li>

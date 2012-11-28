@@ -188,22 +188,22 @@ html[xmlns] .utility-clearfix{
  * LAYOUT STYLES
  ==================================================*/
 
-.layout-container{
+#container{
 	background:@bg-color-lighter;
 	margin:0 auto;
 	width:980px;
 }
 
 @media print{
-	.layout-container{}	
+	#container{}
 }
 
-.layout-printheader{
+#printheader{
 	display:none;
 }
 
 @media print{
-	.layout-printheader{
+	#printheader{
         border-bottom:1px solid #ccc;
         display:block;
         margin-bottom:@spacer-height;
@@ -211,7 +211,7 @@ html[xmlns] .utility-clearfix{
 	}
 }
 
-.layout-header{
+#header{
     background:@bg-color-light;
 	height:200px;
     padding:@spacer-height @spacer-width 0 @spacer-width;
@@ -219,18 +219,18 @@ html[xmlns] .utility-clearfix{
 }
 
 @media print{
-	.layout-header{
+	#header{
 		display:none;
 	}	
 }
 
-.layout-logo{
+#logo{
     left:@spacer-width;
     top:@spacer-height;
     position:absolute;
 }
 
-.layout-navigation{
+#navigation{
 	bottom:0;
 	margin:0;
 	padding:0;
@@ -257,7 +257,7 @@ html[xmlns] .utility-clearfix{
 	}
 }
 
-.layout-search-form{
+#search-form{
     background:@bg-color-default;
     border-radius:@radius-small;    
     padding:5px;
@@ -286,18 +286,18 @@ html[xmlns] .utility-clearfix{
 	}
 }
 
-.layout-article{
+#article{
     font-family:@font-family-secondary;
     padding:@spacer-height @width;
 }
 
 @media print{
-	.layout-article{
+	#article{
 		padding:0;
 	}
 }
 
-.layout-breadcrumb{
+#breadcrumb{
 	color:#ccc;
 	font-size:0.9375em;
 	font-style:italic;
@@ -312,12 +312,12 @@ html[xmlns] .utility-clearfix{
 }
 
 @media print{
-	.layout-breadcrumb{
+	#breadcrumb{
 		display:none;
 	}
 }
 
-.layout-footer{
+#footer{
     background:@bg-color-darker;
 	color:#fff;
 	font-size:0.9375em;
@@ -348,7 +348,7 @@ html[xmlns] .utility-clearfix{
 }
 
 @media print{
-	.layout-footer{
+	#footer{
 		display:none;
 	}	
 }

@@ -134,49 +134,49 @@ html[xmlns] .utility-clearfix {
 .utility-shadow {
   box-shadow: 0 0 5px 0 #000;
 }
-.layout-container {
+#container {
   background: #ffffff;
   margin: 0 auto;
   width: 980px;
 }
-.layout-printheader {
+#printheader {
   display: none;
 }
 @media print {
-  .layout-printheader {
+  #printheader {
     border-bottom: 1px solid #ccc;
     display: block;
     margin-bottom: 20px;
     padding: 20px 0;
   }
 }
-.layout-header {
+#header {
   background: #f2f2f2;
   height: 200px;
   padding: 20px 20px 0 20px;
   position: relative;
 }
 @media print {
-  .layout-header {
+  #header {
     display: none;
   }
 }
-.layout-logo {
+#logo {
   left: 20px;
   top: 20px;
   position: absolute;
 }
-.layout-navigation {
+#navigation {
   bottom: 0;
   margin: 0;
   padding: 0;
   position: absolute;
 }
-.layout-navigation li {
+#navigation li {
   display: inline;
   padding: 0;
 }
-.layout-navigation a {
+#navigation a {
   background: #808080;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -185,12 +185,12 @@ html[xmlns] .utility-clearfix {
   margin-right: 2px;
   padding: 4px 7px;
 }
-.layout-navigation a:hover,
-.layout-navigation a:active {
+#navigation a:hover,
+#navigation a:active {
   background: #a6a6a6;
   text-decoration: none;
 }
-.layout-search-form {
+#search-form {
   background: #ccc;
   border-radius: 3px;
   padding: 5px;
@@ -198,73 +198,73 @@ html[xmlns] .utility-clearfix {
   right: 20px;
   top: 20px;
 }
-.layout-search-form input {
+#search-form input {
   border: none;
   float: left;
   margin: 0;
   padding: 5px;
 }
-.layout-search-form input[type=text] {
+#search-form input[type=text] {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   width: 200px;
 }
-.layout-search-form input[type=submit] {
+#search-form input[type=submit] {
   background: #808080;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #fff;
 }
-.layout-article {
+#article {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   padding: 20px ;
 }
 @media print {
-  .layout-article {
+  #article {
     padding: 0;
   }
 }
-.layout-breadcrumb {
+#breadcrumb {
   color: #ccc;
   font-size: 0.9375em;
   font-style: italic;
   list-style: none;
   margin: 0 0 10px 0;
 }
-.layout-breadcrumb li {
+#breadcrumb li {
   display: inline;
 }
 @media print {
-  .layout-breadcrumb {
+  #breadcrumb {
     display: none;
   }
 }
-.layout-footer {
+#footer {
   background: #808080;
   color: #fff;
   font-size: 0.9375em;
   padding: 20px 20px;
 }
-.layout-footer ul {
+#footer ul {
   margin: 0;
   padding: 0;
 }
-.layout-footer li {
+#footer li {
   border-right: 1px solid #fff;
   display: inline;
   padding: 0 10px 0 5px;
 }
-.layout-footer li.first-child {
+#footer li.first-child {
   padding-left: 0;
 }
-.layout-footer li.last-child {
+#footer li.last-child {
   border: none;
 }
-.layout-footer a {
+#footer a {
   color: #fff;
 }
 @media print {
-  .layout-footer {
+  #footer {
     display: none;
   }
 }
