@@ -9,7 +9,10 @@
  ==================================================*/
 	
 /* 
-	em measurements divide target by 16
+	1em is considered roughly 100% of 16px font, so em translates to a 
+	decimal based percentage of 16. To get the em, we take the target 
+	pixel size and divide by 16.
+
 	10 = 0.625em
 	11 = 0.6875em
 	12 = 0.75em
