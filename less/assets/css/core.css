@@ -92,7 +92,7 @@ th {
 small {
   font-size: 0.75em;
 }
-.utility-clearfix:after {
+.clearfix:after {
   content: ".";
   display: block;
   clear: both;
@@ -100,39 +100,14 @@ small {
   line-height: 0;
   height: 0;
 }
-.utility-clearfix {
+.clearfix {
   display: inline-block;
 }
-html[xmlns] .utility-clearfix {
+html[xmlns] .clearfix {
   display: block;
 }
-* html .utility-clearfix {
+* html .clearfix {
   height: 1%;
-}
-.utility-append-bottom {
-  margin-bottom: 20px;
-}
-.utility-no-margin {
-  margin: 0;
-}
-.utility-prepend-top {
-  margin-top: 20px;
-}
-.utility-seo-friendly-hide {
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  width: 1px;
-}
-@media print {
-  .utility-seo-friendly-hide {
-    height: auto;
-    margin-bottom: 20px;
-    width: auto;
-  }
-}
-.utility-shadow {
-  box-shadow: 0 0 5px 0 #000;
 }
 #container {
   background: #ffffff;

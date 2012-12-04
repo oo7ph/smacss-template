@@ -30,7 +30,7 @@
 		<!-- container -->
 		<div id="container">
 			<!-- print header -->
-			<div id="printheader" class="utility-clearfix"><img src="assets/img/global/logo.gif" alt="XXXX logo"></div>
+			<div id="printheader" class="clearfix"><img src="assets/img/global/logo.gif" alt="XXXX logo"></div>
 			
 			<!-- header -->
 			<div id="header">

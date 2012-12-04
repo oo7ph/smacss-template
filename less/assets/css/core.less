@@ -130,9 +130,9 @@ small{
 	font-size:0.75em;
 }
 
-// utility classes
+// clearfix class
 
-.utility-clearfix:after{
+.clearfix:after{
 	content:".";
 	display:block;
 	clear:both;
@@ -141,47 +141,16 @@ small{
 	height:0;
 }
  
-.utility-clearfix{
+.clearfix{
 	display:inline-block;
 }
  
-html[xmlns] .utility-clearfix{
+html[xmlns] .clearfix{
 	display:block;
 }
  
-* html .utility-clearfix{
+* html .clearfix{
 	height:1%;
-}
-
-.utility-append-bottom{
-    margin-bottom:@spacer-height;
-}
-
-.utility-no-margin{
-    margin:0;
-}
-
-.utility-prepend-top{
-    margin-top:@spacer-height;
-}
-
-.utility-seo-friendly-hide{
-    height:1px;
-    margin:0;
-    overflow:hidden;
-    width:1px;
-}
-
-@media print{
-	.utility-seo-friendly-hide{
-	    height:auto;
-		margin-bottom:@spacer-height;
-	    width:auto;
-	}
-}
-
-.utility-shadow{
-    box-shadow:0 0 5px 0 #000;
 }
 
 /*==================================================
