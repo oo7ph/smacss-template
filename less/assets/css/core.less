@@ -52,16 +52,16 @@
 body{
 	background-color:@bg-color-default;
 	color:#000;
-    font-family:@font-family-default;
+	font-family:@font-family-default;
 }
 
 address, caption, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul{
-    line-height:1.4em;
-    margin-bottom:@spacer-height;
+	line-height:1.4em;
+	margin-bottom:@spacer-height;
 }
 
 address, caption, dl, input, label, li, p, pre, span, td, textarea, th{
-    font-size:0.8125em;
+	font-size:0.8125em;
 }
 
 textarea {
@@ -69,46 +69,46 @@ textarea {
 }
 
 h1{
-    font-size:1.4375em;
+	font-size:1.4375em;
 }
 
 h2{
-    font-size:1.3125em;
+	font-size:1.3125em;
 }
 
 h3{
-    font-size:1.1875em;
+	font-size:1.1875em;
 }
 
 h4{
-    font-size:1.0625em;
+	font-size:1.0625em;
 }
 
 h5{
-    font-size:1.0625em;
+	font-size:1.0625em;
 }
 
 h6{
-    font-size:1.0625em;
+	font-size:1.0625em;
 }
 
 ol{
-    list-style:decimal;
-    margin-left:@spacer-width;
+	list-style:decimal;
+	margin-left:@spacer-width;
 }
 
 ul{
-    list-style:square;
-    margin-left:@spacer-width;
+	list-style:square;
+	margin-left:@spacer-width;
 }
 
 ol ol, ul ul{
-    line-height:inherit;
-    margin-bottom:0;
+	line-height:inherit;
+	margin-bottom:0;
 }
 
 li li{
-    font-size:1em;
+	font-size:1em;
 }
 
 a:link, a:visited{
@@ -121,12 +121,12 @@ a:hover, a:active{
 }
 
 blockquote{
-    font-style:italic;
-    margin:0 @spacer-width;
+	font-style:italic;
+	margin:0 @spacer-width;
 }
 
 dt, th{
-    font-weight:bold;
+	font-weight:bold;
 }
 
 small{
@@ -176,17 +176,17 @@ html[xmlns] .clearfix{
 
 @media print{
 	#printheader{
-        border-bottom:1px solid #ccc;
-        display:block;
-        margin-bottom:@spacer-height;
-        padding:@spacer-height 0;
+		border-bottom:1px solid #ccc;
+		display:block;
+		margin-bottom:@spacer-height;
+		padding:@spacer-height 0;
 	}
 }
 
 #header{
-    background:@bg-color-light;
+	background:@bg-color-light;
 	height:200px;
-    padding:@spacer-height @spacer-width 0 @spacer-width;
+	padding:@spacer-height @spacer-width 0 @spacer-width;
 	position:relative;
 }
 
@@ -197,9 +197,9 @@ html[xmlns] .clearfix{
 }
 
 #logo{
-    left:@spacer-width;
-    top:@spacer-height;
-    position:absolute;
+	left:@spacer-width;
+	top:@spacer-height;
+	position:absolute;
 }
 
 #navigation{
@@ -230,12 +230,12 @@ html[xmlns] .clearfix{
 }
 
 #search-form{
-    background:@bg-color-default;
-    border-radius:@radius-small;    
-    padding:5px;
+	background:@bg-color-default;
+	border-radius:@radius-small;	
+	padding:5px;
 	position:absolute;
-    right:@spacer-width;
-    top:@spacer-height;
+	right:@spacer-width;
+	top:@spacer-height;
 	
 	input{
 		border:none;
@@ -245,22 +245,22 @@ html[xmlns] .clearfix{
 		
 		&[type=text]{
 			border-top-left-radius:@radius-small;
-			border-bottom-left-radius:@radius-small;    
+			border-bottom-left-radius:@radius-small;	
 			width:200px;
 		}
 		
 		&[type=submit]{
 			background:@bg-color-darker;
 			border-top-right-radius:@radius-small;
-			border-bottom-right-radius:@radius-small;    
+			border-bottom-right-radius:@radius-small;	
 			color:#fff;
 		}		
 	}
 }
 
 #article{
-    font-family:@font-family-secondary;
-    padding:@spacer-height @width;
+	font-family:@font-family-secondary;
+	padding:@spacer-height @width;
 }
 
 @media print{
@@ -290,33 +290,33 @@ html[xmlns] .clearfix{
 }
 
 #footer{
-    background:@bg-color-darker;
+	background:@bg-color-darker;
 	color:#fff;
 	font-size:0.9375em;
-    padding:@spacer-height @spacer-width;
-    
+	padding:@spacer-height @spacer-width;
+	
 	ul{
-	    margin:0;
-	    padding:0;
+		margin:0;
+		padding:0;
 	}
 	
 	li{
-	    border-right:1px solid #fff;
-	    display:inline;
-	    padding:0 10px 0 5px;
-	    
+		border-right:1px solid #fff;
+		display:inline;
+		padding:0 10px 0 5px;
+		
 		&.first-child{
-		    padding-left:0;
+			padding-left:0;
 		}
 		
 		&.last-child{
-		    border:none;
-		}	    
+			border:none;
+		}		
 	}
 	
 	a{
-	    color:#fff;
-	}    
+		color:#fff;
+	}	
 }
 
 @media print{
@@ -333,15 +333,15 @@ html[xmlns] .clearfix{
 
 .btn{
 	@btn-color:#ccc;
-    background:@btn-color;
+	background:@btn-color;
 	border:none;
-    border-radius:@radius-default;
-    color:darken(@btn-color,75%) !important;
-    padding:6px 12px;
-    
+	border-radius:@radius-default;
+	color:darken(@btn-color,75%) !important;
+	padding:6px 12px;
+	
 	&:hover, &:active{
-	    background:darken(@btn-color,5%);
-	    text-decoration:none;
+		background:darken(@btn-color,5%);
+		text-decoration:none;
 	}
 }
 
@@ -349,10 +349,10 @@ html[xmlns] .clearfix{
 
 .alert{
 	@alert-color:#ccc;
-    background:@alert-color;
-    border:1px solid darken(@alert-color,25%);
-    border-radius:@radius-small;      
-    padding:5px;
+	background:@alert-color;
+	border:1px solid darken(@alert-color,25%);
+	border-radius:@radius-small;	  
+	padding:5px;
 }
 
 // forms
@@ -431,30 +431,30 @@ html[xmlns] .clearfix{
 .alert{
 	&.is-error{
 		@alert-color-error:#fbe3e4;
-    	background:@alert-color-error;
-    	border-color:darken(@alert-color-error,25%);    
-    	color:darken(@alert-color-error,50%);
+		background:@alert-color-error;
+		border-color:darken(@alert-color-error,25%);	
+		color:darken(@alert-color-error,50%);
 	}
 
 	&.is-notice{
 		@alert-color-notice:#fff6bf;
-    	background:@alert-color-notice;
-    	border-color:darken(@alert-color-notice,25%);    
-    	color:darken(@alert-color-notice,50%);
+		background:@alert-color-notice;
+		border-color:darken(@alert-color-notice,25%);	
+		color:darken(@alert-color-notice,50%);
 	}
 
 	&.is-success{
 		@alert-color-success:#e6efc2;
-    	background:@alert-color-success;
-    	border-color:darken(@alert-color-success,25%);    
-    	color:darken(@alert-color-success,50%);
+		background:@alert-color-success;
+		border-color:darken(@alert-color-success,25%);	
+		color:darken(@alert-color-success,50%);
 	}
 
 	&.is-info{
 		@alert-color-info:#d5edf8;
-    	background:@alert-color-info;
-    	border-color:darken(@alert-color-info,25%);    
-    	color:darken(@alert-color-info,50%);
+		background:@alert-color-info;
+		border-color:darken(@alert-color-info,25%);	
+		color:darken(@alert-color-info,50%);
 	}
 }
 
