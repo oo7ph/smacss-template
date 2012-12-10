@@ -1,9 +1,3 @@
-<?php
-	require "inc/lessc.inc.php";
-	$less = new lessc;
-	$less->compileFile("assets/css/core.less", "assets/css/core.css");		
-?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,7 +9,9 @@
 		
 		<title>Welcome to XXXX</title>
 		
-		<link href="assets/css/core.css" rel="stylesheet">
+		<link href="assets/css/core.less" rel="stylesheet/less"  type="text/css" />
+		
+		<script src="http://lesscss.googlecode.com/files/less-1.0.18.min.js"></script>
 		
 		<!--
 		<link rel="shortcut icon" href="favicon.ico">
