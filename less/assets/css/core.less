@@ -2,8 +2,6 @@
  * SCALABLE AND MODULAR ARCHITECTURE FOR CSS (SMACSS)
  ==================================================*/
 
-@import url("//normalize-css.googlecode.com/svn/trunk/normalize.css");
-
 // background color variables
 @bg-color-default:#ccc;
 @bg-color-lighter:lighten(@bg-color-default,30%);
@@ -55,7 +53,7 @@ body{
 	font-family:@font-family-default;
 }
 
-address, caption, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul{
+address, caption, dl, ol, p, pre, table, ul{
 	line-height:1.4em;
 	margin:0 0 @spacer-height 0;
 }
@@ -70,26 +68,32 @@ textarea {
 
 h1{
 	font-size:1.4375em;
+	margin-bottom:@spacer-height;
 }
 
 h2{
 	font-size:1.3125em;
+	margin-bottom:@spacer-height;
 }
 
 h3{
 	font-size:1.1875em;
+	margin-bottom:@spacer-height;
 }
 
 h4{
 	font-size:1.0625em;
+	margin-bottom:@spacer-height;
 }
 
 h5{
 	font-size:1.0625em;
+	margin-bottom:@spacer-height;
 }
 
 h6{
 	font-size:1.0625em;
+	margin-bottom:@spacer-height;
 }
 
 ol{
@@ -160,22 +164,18 @@ html[xmlns] .clearfix{
  * LAYOUT STYLES
  ==================================================*/
 
-#container{
+.layout-container{
 	background:@bg-color-lighter;
 	margin:0 auto;
 	width:980px;
 }
 
-@media print{
-	#container{}
-}
-
-#printheader{
+.layout-printheader{
 	display:none;
 }
 
 @media print{
-	#printheader{
+	.layout-printheader{
 		border-bottom:1px solid #ccc;
 		display:block;
 		margin-bottom:@spacer-height;
@@ -183,28 +183,28 @@ html[xmlns] .clearfix{
 	}
 }
 
-#header{
+.layout-header{	
 	background:@bg-color-light;
-	height:200px;
-	padding:@spacer-height @spacer-width 0 @spacer-width;
+	height:220px;
 	position:relative;
+	width:100%;
 }
 
 @media print{
-	#header{
+	.layout-header{
 		display:none;
 	}	
 }
 
-#logo{
+.layout-logo{
 	left:@spacer-width;
 	top:@spacer-height;
 	position:absolute;
 }
 
-#navigation{
+.layout-navigation{
 	bottom:0;
-	margin:0;
+	margin:0 0 0 @spacer-width;
 	padding:0;
 	position:absolute;
 
@@ -229,7 +229,7 @@ html[xmlns] .clearfix{
 	}
 }
 
-#search-form{
+.layout-search-form{
 	background:@bg-color-default;
 	border-radius:@radius-small;	
 	padding:5px;
@@ -258,20 +258,19 @@ html[xmlns] .clearfix{
 	}
 }
 
-#article{
+.layout-article{
 	font-family:@font-family-secondary;
 	padding:@spacer-height @spacer-width;
 }
 
 @media print{
-	#article{
+	.layout-article{
 		padding:0;
 	}
 }
 
-#breadcrumb{
+.layout-breadcrumb{
 	color:#ccc;
-	font-size:0.9375em;
 	font-style:italic;
 	list-style:none;
 	margin:0 0 10px 0;
@@ -279,20 +278,17 @@ html[xmlns] .clearfix{
 	li{
 		display:inline;
 	}
-	
-	a{}	
 }
 
 @media print{
-	#breadcrumb{
+	.layout-breadcrumb{
 		display:none;
 	}
 }
 
-#footer{
+.layout-footer{
 	background:@bg-color-darker;
 	color:#fff;
-	font-size:0.9375em;
 	padding:@spacer-height @spacer-width;
 	
 	ul{
@@ -303,15 +299,15 @@ html[xmlns] .clearfix{
 	li{
 		border-right:1px solid #fff;
 		display:inline;
-		padding:0 10px 0 5px;
-		
-		&.first-child{
-			padding-left:0;
-		}
-		
-		&.last-child{
-			border:none;
-		}		
+		padding:0 10px 0 5px;		
+	}
+	
+	&.first-child{
+		padding-left:0;
+	}
+	
+	&.last-child{
+		border:none;
 	}
 	
 	a{
@@ -320,7 +316,7 @@ html[xmlns] .clearfix{
 }
 
 @media print{
-	#footer{
+	.layout-footer{
 		display:none;
 	}	
 }
@@ -336,7 +332,7 @@ html[xmlns] .clearfix{
 	background:@btn-color;
 	border:none;
 	border-radius:@radius-default;
-	color:darken(@btn-color,75%) !important;
+	color:darken(@btn-color,75%);
 	padding:6px 12px;
 	
 	&:hover, &:active{
@@ -360,11 +356,6 @@ html[xmlns] .clearfix{
 .form-horizontal{
 	width:500px;
 	
-	h3{
-		color:#1f1b03;
-		font-family:@font-family-tertiary;
-	}
-	
 	fieldset{
 		background:#fddbaa;
 		border:1px solid #fcc579;
@@ -381,7 +372,6 @@ html[xmlns] .clearfix{
 		float:left;
 		font-weight:bold;
 		margin-bottom:@spacer-height;
-		padding:2px;
 		width:226px;
 	}
 	
@@ -391,13 +381,10 @@ html[xmlns] .clearfix{
 		
 		span{
 			display:block;
-			font-size:0.75em;
 			padding:4px 0 8px 0;	
 		}
 		
 		input, select, textarea{
-			border:1px solid #929292;
-			padding:2px;
 			width:196px;
 		}		
 	}
