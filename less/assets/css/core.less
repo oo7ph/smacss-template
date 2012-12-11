@@ -31,178 +31,151 @@
 	decimal based percentage of 16. To get the em, we take the target 
 	pixel size and divide by 16.
 
-	10 = 0.625em
-	11 = 0.6875em
-	12 = 0.75em
-	13 = 0.8125em
-	14 = 0.875em
-	15 = 0.9375em
-	16 = 1em
-	17 = 1.0625em
-	18 = 1.125em
-	19 = 1.1875em
-	20 = 1.25em
-	21 = 1.3125em
-	22 = 1.375em
-	23 = 1.4375em
+	14 / 16 =     0.875em     (14px equivalent)
+	16 / 16 =     1em         (16px equivalent)
+	18 / 16 =     1.125em     (18px equivalent)
+	21 / 16 =     1.3125em    (21px equivalent)
+	24 / 16 =     1.5em       (24px equivalent)
+	30 / 16 =     1.875em     (30px equivalent)
+	72 / 16 =     4.5em       (72px equivalent)
 */
 
-body{
+body {
 	background-color:@bg-color-default;
-	color:#000;
+	color:#111;
 	font-family:@font-family-default;
+	font-size:100%;
 }
 
-address, caption, dl, ol, p, pre, table, ul{
+address, caption, dl, ol, p, pre, table, ul {
 	line-height:1.4em;
 	margin:0 0 @spacer-height 0;
 }
 
-address, caption, dl, input, label, li, p, pre, span, td, textarea, th{
-	font-size:0.8125em;
+address, caption, dl, input, label, li, p, pre, span, td, textarea, th {
+	font-size:1em;
 }
 
 textarea {
 	font-family:@font-family-default;
 }
 
-h1{
-	font-size:1.4375em;
+h1 {
+	font-size:1.875em;
+	line-height:1.4em;
 	margin-bottom:@spacer-height;
 }
 
-h2{
+h2 {
+	font-size:1.5em;
+	line-height:1.4em;
+	margin-bottom:@spacer-height;
+}
+
+h3 {
 	font-size:1.3125em;
+	line-height:1.4em;
 	margin-bottom:@spacer-height;
 }
 
-h3{
-	font-size:1.1875em;
+h4 {
+	font-size:1.125em;
+	line-height:1.4em;
 	margin-bottom:@spacer-height;
 }
 
-h4{
-	font-size:1.0625em;
+h5, h6 {
+	font-size:1em;
+	line-height:1.4em;
 	margin-bottom:@spacer-height;
 }
 
-h5{
-	font-size:1.0625em;
-	margin-bottom:@spacer-height;
-}
-
-h6{
-	font-size:1.0625em;
-	margin-bottom:@spacer-height;
-}
-
-ol{
+ol {
 	list-style:decimal;
 	margin-left:@spacer-width;
 }
 
-ul{
+ul {
 	list-style:square;
 	margin-left:@spacer-width;
 }
 
-ol ol, ul ul{
+ol ol, ul ul {
 	line-height:inherit;
 	margin-bottom:0;
 }
 
-li li{
+li li {
 	font-size:1em;
 }
 
-a:link, a:visited{
-	color:#0BB5FF;
+a:link, a:visited {
+	color:#327CCB;
 	text-decoration:none;
 }
 
-a:hover, a:active{
+a:hover, a:active {
 	text-decoration:underline;
 }
 
-blockquote{
+blockquote {
 	font-style:italic;
 	margin:0 @spacer-width;
 }
 
-dt, th{
+dt, th {
 	font-weight:bold;
 }
 
-small{
-	font-size:0.75em;
-}
-
-// clearfix class
-
-.clearfix:after{
-	content:".";
-	display:block;
-	clear:both;
-	visibility:hidden;
-	line-height:0;
-	height:0;
-}
- 
-.clearfix{
-	display:inline-block;
-}
- 
-html[xmlns] .clearfix{
-	display:block;
-}
- 
-* html .clearfix{
-	height:1%;
+small {
+	font-size:0.875em;
 }
 
 /*==================================================
  * LAYOUT STYLES
  ==================================================*/
 
-.layout-container{
+.layout-container {
 	background:@bg-color-lighter;
-	margin:0 auto;
-	width:980px;
+	margin:20px auto;
+	width:90%;
 }
 
-.layout-printheader{
+.layout-printheader {
 	display:none;
 }
 
-@media print{
-	.layout-printheader{
+@media print {
+	.layout-printheader {
 		border-bottom:1px solid #ccc;
 		display:block;
 		margin-bottom:@spacer-height;
+		overflow:auto;
 		padding:@spacer-height 0;
 	}
 }
 
-.layout-header{	
+.layout-header {	
 	background:@bg-color-light;
 	height:220px;
 	position:relative;
 	width:100%;
 }
 
-@media print{
-	.layout-header{
+@media print {
+	.layout-header {
 		display:none;
 	}	
 }
 
-.layout-logo{
+.layout-logo {
+	font-size:4.5em;
 	left:@spacer-width;
 	top:@spacer-height;
 	position:absolute;
 }
 
-.layout-navigation{
+.layout-navigation {
 	bottom:0;
 	margin:0 0 0 @spacer-width;
 	padding:0;
@@ -213,7 +186,7 @@ html[xmlns] .clearfix{
 		padding:0;
 	}
 	
-	a{
+	a {
 		background:@bg-color-darker;
 		border-top-left-radius:@radius-small;
 		border-top-right-radius:@radius-small;
@@ -222,14 +195,14 @@ html[xmlns] .clearfix{
 		margin-right:2px;
 		padding:4px 7px;
 		
-		&:hover, &:active{
+		&:hover, &:active {
 			background:@bg-color-dark;
 			text-decoration:none;
 		}			
 	}
 }
 
-.layout-search-form{
+.layout-search {
 	background:@bg-color-default;
 	border-radius:@radius-small;	
 	padding:5px;
@@ -237,19 +210,19 @@ html[xmlns] .clearfix{
 	right:@spacer-width;
 	top:@spacer-height;
 	
-	input{
+	input {
 		border:none;
 		float:left;
 		margin:0;
 		padding:5px;
 		
-		&[type=text]{
+		&[type=text] {
 			border-top-left-radius:@radius-small;
 			border-bottom-left-radius:@radius-small;	
 			width:200px;
 		}
 		
-		&[type=submit]{
+		&[type=submit] {
 			background:@bg-color-darker;
 			border-top-right-radius:@radius-small;
 			border-bottom-right-radius:@radius-small;	
@@ -258,65 +231,65 @@ html[xmlns] .clearfix{
 	}
 }
 
-.layout-article{
+.layout-article {
 	font-family:@font-family-secondary;
 	padding:@spacer-height @spacer-width;
 }
 
-@media print{
-	.layout-article{
+@media print {
+	.layout-article {
 		padding:0;
 	}
 }
 
-.layout-breadcrumb{
+.layout-breadcrumb {
 	color:#ccc;
 	font-style:italic;
 	list-style:none;
 	margin:0 0 10px 0;
 	
-	li{
+	li {
 		display:inline;
 	}
 }
 
-@media print{
-	.layout-breadcrumb{
+@media print {
+	.layout-breadcrumb {
 		display:none;
 	}
 }
 
-.layout-footer{
+.layout-footer {
 	background:@bg-color-darker;
 	color:#fff;
 	padding:@spacer-height @spacer-width;
 	
-	ul{
+	ul {
 		margin:0;
 		padding:0;
 	}
 	
-	li{
+	li {
 		border-right:1px solid #fff;
 		display:inline;
 		padding:0 10px 0 5px;		
 	}
 	
-	&.first-child{
+	&.first-child {
 		padding-left:0;
 	}
 	
-	&.last-child{
+	&.last-child {
 		border:none;
 	}
 	
-	a{
+	a {
 		color:#fff;
 	}	
 }
 
-@media print{
-	.layout-footer{
+@media print {
+	.layout-footer {
 		display:none;
 	}	
 }
@@ -327,7 +300,7 @@ html[xmlns] .clearfix{
 
 // buttons
 
-.btn{
+.btn {
 	@btn-color:#ccc;
 	background:@btn-color;
 	border:none;
@@ -335,7 +308,7 @@ html[xmlns] .clearfix{
 	color:darken(@btn-color,75%);
 	padding:6px 12px;
 	
-	&:hover, &:active{
+	&:hover, &:active {
 		background:darken(@btn-color,5%);
 		text-decoration:none;
 	}
@@ -343,7 +316,7 @@ html[xmlns] .clearfix{
 
 // alert boxes
 
-.alert{
+.alert {
 	@alert-color:#ccc;
 	background:@alert-color;
 	border:1px solid darken(@alert-color,25%);
@@ -351,108 +324,36 @@ html[xmlns] .clearfix{
 	padding:5px;
 }
 
-// forms
-
-.form-horizontal{
-	width:500px;
-	
-	fieldset{
-		background:#fddbaa;
-		border:1px solid #fcc579;
-		border-radius:@radius-small;
-		margin-bottom:@spacer-height;
-		padding:14px 19px 24px 19px;
-	}
-	
-	.control-group{
-		clear:both;
-	}
-	
-	.control-label{
-		float:left;
-		font-weight:bold;
-		margin-bottom:@spacer-height;
-		width:226px;
-	}
-	
-	.controls{
-		float:left;
-		width:230px;
-		
-		span{
-			display:block;
-			padding:4px 0 8px 0;	
-		}
-		
-		input, select, textarea{
-			width:196px;
-		}		
-	}
-	
-	.form-actions{
-		text-align:right;
-	}
-}
-
-// pager
-
-.pager{
-	margin:0;
-	padding:0;
-	width:100%;
-	
-	li{
-		display:inline-block;
-		width:49%;
-	}
-	
-	.pager-next{
-		text-align:right;
-	}	
-}
-
 /*==================================================
  * STATE STYLES
  ==================================================*/
 
-.alert{
-	&.is-error{
+.alert {
+	&.is-error {
 		@alert-color-error:#fbe3e4;
 		background:@alert-color-error;
 		border-color:darken(@alert-color-error,25%);	
 		color:darken(@alert-color-error,50%);
 	}
 
-	&.is-notice{
+	&.is-notice {
 		@alert-color-notice:#fff6bf;
 		background:@alert-color-notice;
 		border-color:darken(@alert-color-notice,25%);	
 		color:darken(@alert-color-notice,50%);
 	}
 
-	&.is-success{
+	&.is-success {
 		@alert-color-success:#e6efc2;
 		background:@alert-color-success;
 		border-color:darken(@alert-color-success,25%);	
 		color:darken(@alert-color-success,50%);
 	}
 
-	&.is-info{
+	&.is-info {
 		@alert-color-info:#d5edf8;
 		background:@alert-color-info;
 		border-color:darken(@alert-color-info,25%);	
 		color:darken(@alert-color-info,50%);
-	}
-}
-
-.form-horizontal{
-	.controls{
-		&.is-error{
-			color:#8a1f11;
-		}
-
-		&.is-success{
-			color:#264409;
-		}
 	}
 }

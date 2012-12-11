@@ -11,184 +11,151 @@
 	decimal based percentage of 16. To get the em, we take the target 
 	pixel size and divide by 16.
 
-	10 = 0.625em
-	11 = 0.6875em
-	12 = 0.75em
-	13 = 0.8125em
-	14 = 0.875em
-	15 = 0.9375em
-	16 = 1em
-	17 = 1.0625em
-	18 = 1.125em
-	19 = 1.1875em
-	20 = 1.25em
-	21 = 1.3125em
-	22 = 1.375em
-	23 = 1.4375em
+	14 / 16 =     0.875em     (14px equivalent)
+	16 / 16 =     1em         (16px equivalent)
+	18 / 16 =     1.125em     (18px equivalent)
+	21 / 16 =     1.3125em    (21px equivalent)
+	24 / 16 =     1.5em       (24px equivalent)
+	30 / 16 =     1.875em     (30px equivalent)
+	72 / 16 =     4.5em       (72px equivalent)
 */
 
-body{
-	background-color:#ccc;
-	color:#000;
+body {
+	background-color:#327CCB;
+	color:#111;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:100%;
 }
 
-address, caption, dl, ol, p, pre, table, ul{
+address, caption, dl, ol, p, pre, table, ul {
 	line-height:1.4em;
 	margin:0 0 20px 0;
 }
 
-address, caption, dl, input, label, li, p, pre, span, td, textarea, th{
-	font-size:0.8125em;
+address, caption, dl, input, label, li, p, pre, span, td, textarea, th {
+	font-size:1em;
 }
 
 textarea {
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1{
-	font-size:1.4375em;
+h1 {
+	font-size:1.875em;
 	line-height:1.4em;
 	margin-bottom:20px;
 }
 
-h2{
+h2 {
+	font-size:1.5em;
+	line-height:1.4em;
+	margin-bottom:20px;
+}
+
+h3 {
 	font-size:1.3125em;
 	line-height:1.4em;
 	margin-bottom:20px;
 }
 
-h3{
-	font-size:1.1875em;
+h4 {
+	font-size:1.125em;
 	line-height:1.4em;
 	margin-bottom:20px;
 }
 
-h4{
-	font-size:1.0625em;
+h5, h6 {
+	font-size:1em;
 	line-height:1.4em;
 	margin-bottom:20px;
 }
 
-h5{
-	font-size:1.0625em;
-	line-height:1.4em;
-	margin-bottom:20px;
-}
-
-h6{
-	font-size:1.0625em;
-	line-height:1.4em;
-	margin-bottom:20px;
-}
-
-ol{
+ol {
 	list-style:decimal;
 	margin-left:20px;
 }
 
-ul{
+ul {
 	list-style:square;
 	margin-left:20px;
 }
 
-ol ol, ul ul{
+ol ol, ul ul {
 	line-height:inherit;
 	margin-bottom:0;
 }
 
-li li{
+li li {
 	font-size:1em;
 }
 
-a:link, a:visited{
-	color:#0BB5FF;
+a:link, a:visited {
+	color:#327CCB;
 	text-decoration:none;
 }
 
-a:hover, a:active{
+a:hover, a:active {
 	text-decoration:underline;
 }
 
-blockquote{
+blockquote {
 	font-style:italic;
 	margin:0 20px;
 }
 
-dt, th{
+dt, th {
 	font-weight:bold;
 }
 
-small{
-	font-size:0.75em;
-}
-
-/* clearfix class */
-
-.clearfix:after{
-	content:".";
-	display:block;
-	clear:both;
-	visibility:hidden;
-	line-height:0;
-	height:0;
-}
- 
-.clearfix{
-	display:inline-block;
-}
- 
-html[xmlns] .clearfix{
-	display:block;
-}
- 
-* html .clearfix{
-	height:1%;
+small {
+	font-size:0.875em;
 }
 
 /*==================================================
  * LAYOUT STYLES
  ==================================================*/
 
-.layout-container{
+.layout-container {
 	background:#fff;
-	margin:0 auto;
-	width:980px;
+	margin:20px auto;
+	width:90%;
 }
 
-.layout-printheader{
+.layout-printheader {
 	display:none;
 }
 
-@media print{
-	.layout-printheader{
+@media print {
+	.layout-printheader {
 		border-bottom:1px solid #ccc;
 		display:block;
 		margin-bottom:20px;
+		overflow:auto;
 		padding:20px 0;
 	}
 }
 
-.layout-header{
+.layout-header {
 	background:#efefef;
 	height:220px;
 	position:relative;
 	width:100%;
 }
 
-@media print{
-	.layout-header{
+@media print {
+	.layout-header {
 		display:none;
 	}	
 }
 
-.layout-logo{
+.layout-logo {
+	font-size:4.5em;
 	left:20px;
 	top:20px;
 	position:absolute;
 }
 
-.layout-navigation{
+.layout-navigation {
 	bottom:0;
 	left:20px;
 	margin:0;
@@ -201,7 +168,7 @@ html[xmlns] .clearfix{
 	padding:0;
 }
 	
-.layout-navigation a{
+.layout-navigation a {
 	background:#333;
 	border-top-left-radius:3px;
 	border-top-right-radius:3px;
@@ -211,12 +178,12 @@ html[xmlns] .clearfix{
 	padding:4px 7px;
 }
 
-.layout-navigation a:hover, .layout-navigation a:active{
+.layout-navigation a:hover, .layout-navigation a:active {
 	background:#666;
 	text-decoration:none;
 }
 
-.layout-search-form{
+.layout-search {
 	background:#ccc;
 	border-radius:3px;	
 	padding:5px;
@@ -225,86 +192,86 @@ html[xmlns] .clearfix{
 	top:20px;
 }
 
-.layout-search-form input{
+.layout-search input {
 	border:none;
 	float:left;
 	margin:0;
 	padding:5px;
 }
 
-.layout-search-form input[type=text]{
+.layout-search input[type=text] {
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;	
 	width:200px;
 }
 
-.layout-search-form input[type=submit]{
+.layout-search input[type=submit] {
 	background:#333;
 	border-top-right-radius:3px;
 	border-bottom-right-radius:3px;	
 	color:#fff;
 }
 
-.layout-article{
+.layout-article {
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	padding:20px;
 }
 
-@media print{
-	.layout-article{
+@media print {
+	.layout-article {
 		padding:0;
 	}
 }
 
-.layout-breadcrumb{
+.layout-breadcrumb {
 	color:#ccc;
 	font-style:italic;
 	list-style:none;
 	margin:0 0 10px 0;
 }
 
-@media print{
-	.layout-breadcrumb{
+@media print {
+	.layout-breadcrumb {
 		display:none;
 	}
 }
 
-.layout-breadcrumb li{
+.layout-breadcrumb li {
 	display:inline;
 }
 
-.layout-footer{
+.layout-footer {
 	background:#333;
 	color:#fff;
 	padding:40px 20px;
 }
 
-@media print{
-	.layout-footer{
+@media print {
+	.layout-footer {
 		display:none;
 	}	
 }
 
-.layout-footer ul{
+.layout-footer ul {
 	margin:0;
 	padding:0;
 }
 
-.layout-footer li{
+.layout-footer li {
 	border-right:1px solid #fff;
 	display:inline;
 	padding:0 10px 0 5px;
 }
 
-.layout-footer .first-child{
+.layout-footer .first-child {
 	padding-left:0;
 }
 
-.layout-footer .last-child{
+.layout-footer .last-child {
 	border:none;
 }
 
-.layout-footer a{
+.layout-footer a {
 	color:#fff;
 }
 
@@ -314,7 +281,7 @@ html[xmlns] .clearfix{
 
 /* buttons */
 
-.btn{
+.btn {
 	background:#ccc;
 	border:none;
 	border-radius:5px;
@@ -322,112 +289,44 @@ html[xmlns] .clearfix{
 	padding:6px 12px;
 }
 
-.btn:hover, .btn:active{
+.btn:hover, .btn:active {
 	background:#bbb;
 	text-decoration:none;
 }
 
 /* alert boxes */
 
-.alert{
+.alert {
 	background:#efefef;
 	border:1px solid #ddd;
 	border-radius:3px;	  
 	padding:5px;
 }
 
-/* forms */
-
-.form-horizontal{
-	width:500px;
-}
-
-.form-horizontal fieldset{
-	background:#fddbaa;
-	border:1px solid #fcc579;
-	border-radius:3px;
-	margin-bottom:20px;
-	padding:14px 19px 24px 19px;
-}
-
-.form-horizontal .control-group{
-	clear:both;
-}
-
-.form-horizontal .control-label{
-	float:left;
-	font-weight:bold;
-	margin-bottom:20px;
-	width:226px;
-}
-
-.form-horizontal .controls{
-	float:left;
-	width:230px;
-}
-
-.form-horizontal .controls span{
-	display:block;
-	padding:4px 0 8px 0;	
-}
-
-.form-horizontal .form-actions{
-	text-align:right;
-}
-
-.form-horizontal .controls input, .form-horizontal .controls select, .form-horizontal .controls textarea{
-	width:196px;
-}
-
-/* pager */
-
-.pager{
-	margin:0;
-	padding:0;
-	width:100%;
-}
-
-.pager li{
-	display:inline-block;
-	width:49%;
-}
-
-.pager .pager-next{
-	text-align:right;
-}
-
 /*==================================================
  * STATE STYLES
  ==================================================*/
 
-.alert.is-error{
+.alert.is-error {
 	background:#fbe3e4;
 	border-color:#fbc2c4;	
 	color:#8a1f11;
 }
 
-.alert.is-notice{
+.alert.is-notice {
 	background:#fff6bf;
 	border-color:#ffd324;
 	color:#514721;
 }
 
-.alert.is-success{
+.alert.is-success {
 	background:#e6efc2;
 	border-color:#c6d880;
 	color:#264409;
 }
 
-.alert.is-info{
+.alert.is-info {
 	background:#d5edf8;
 	border-color:#92cae4;
 	color:#205791;
-}
-
-.form-horizontal .controls .is-error{
-	color:#8a1f11;
-}
-
-.form-horizontal .controls .is-success{
-	color:#264409;
 }
