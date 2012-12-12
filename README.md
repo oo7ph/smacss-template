@@ -20,3 +20,5 @@ Icons added to the root should include:
 - apple-touch-icon-precomposed.png
 - apple-touch-icon.png
 - favicon.ico
+
+There should be no need to link to these icons in your HTML.
