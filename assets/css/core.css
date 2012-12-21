@@ -234,18 +234,6 @@ input[type="text"], textarea {
 	padding:2px;
 }
 
-/* hide print headers and footers */
-
-@page {
-  margin: .312in .312in .322in;
-}
-
-@media print {
-  html {
-      margin: .1in;
-  }
-}
-
 /*==================================================
  * LAYOUT STYLES
  ==================================================*/
